@@ -9,6 +9,8 @@ How to control a step motor using NUCLEO-H743ZI2 board.
 
 ### Circuit
 
+[image](https://github.com/qaz9517532846/STM_StepMotor/blob/main/circuit/Circuit.png)
+
 ------
 
 ### Velocity control
