@@ -13,9 +13,30 @@ How to control a step motor using NUCLEO-H743ZI2 board.
 
 ### Velocity control
 
+This step motor takes 4096 steps to complete 1 revolution so it has 512 sequences per revolution.
+
+``` bash
+for(int i = 0; i < 512; i++)
+{
+	for(int i = 0; i < 8; i++)
+	{
+		stepper_half_drive(i);
+		stepper_set_rpm(5);
+	}
+}
+```
+
 ------
 
 ### Position control
+
+Function stepper_step_angle(float angle, int direction, int rpm) is position control for a step motor.
+
+- angle, position(Incremental, unit: degree).
+
+- direction, 0 is clockwise and 1 is anti-clockwise.
+
+- rpm, step motor velocity(unit: rpm).
 
 ------
 
