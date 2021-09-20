@@ -13,7 +13,9 @@ How to control a step motor using NUCLEO-H743ZI2 board.
 
 ### Velocity control
 
-This step motor takes 4096 steps to complete 1 revolution so it has 512 sequences per revolution.
+- This step motor takes 4096 steps to complete 1 revolution so it has 512 sequences per revolution.
+
+- Set velocity mininum is 1 rpm, maxnum is 13 rpm.
 
 ``` bash
 for(int i = 0; i < 512; i++)
