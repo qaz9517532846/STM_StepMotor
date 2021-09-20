@@ -1,0 +1,28 @@
+--cpu Cortex-M7.fp.dp
+"stm_stepmotor\startup_stm32h743xx.o"
+"stm_stepmotor\main.o"
+"stm_stepmotor\stm32h7xx_it.o"
+"stm_stepmotor\stm32h7xx_hal_msp.o"
+"stm_stepmotor\stm32h7xx_hal_cortex.o"
+"stm_stepmotor\stm32h7xx_hal_tim.o"
+"stm_stepmotor\stm32h7xx_hal_tim_ex.o"
+"stm_stepmotor\stm32h7xx_hal_rcc.o"
+"stm_stepmotor\stm32h7xx_hal_rcc_ex.o"
+"stm_stepmotor\stm32h7xx_hal_flash.o"
+"stm_stepmotor\stm32h7xx_hal_flash_ex.o"
+"stm_stepmotor\stm32h7xx_hal_gpio.o"
+"stm_stepmotor\stm32h7xx_hal_hsem.o"
+"stm_stepmotor\stm32h7xx_hal_dma.o"
+"stm_stepmotor\stm32h7xx_hal_dma_ex.o"
+"stm_stepmotor\stm32h7xx_hal_mdma.o"
+"stm_stepmotor\stm32h7xx_hal_pwr.o"
+"stm_stepmotor\stm32h7xx_hal_pwr_ex.o"
+"stm_stepmotor\stm32h7xx_hal.o"
+"stm_stepmotor\stm32h7xx_hal_i2c.o"
+"stm_stepmotor\stm32h7xx_hal_i2c_ex.o"
+"stm_stepmotor\stm32h7xx_hal_exti.o"
+"stm_stepmotor\system_stm32h7xx.o"
+--strict --scatter "STM_StepMotor\STM_StepMotor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM_StepMotor.map" -o STM_StepMotor\STM_StepMotor.axf
