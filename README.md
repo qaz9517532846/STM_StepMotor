@@ -3,7 +3,7 @@ How to control a step motor using NUCLEO-H743ZI2 board.
 
 - Hardware:  NUCLEO-H743ZI2 board, step motor(28BYJ-48) and ULN2003(IC).
 
-- Software: STM32CubueMX and Keil uVision5.
+- Software: [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html) and [Keil uVision5](https://www2.keil.com/mdk5/uvision/).
 
 ------
 
