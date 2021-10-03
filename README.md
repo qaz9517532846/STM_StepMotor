@@ -7,6 +7,16 @@ How to control a step motor using NUCLEO-H743ZI2 board.
 
 ------
 
+### STM32 Setting Parameter
+
+- System Clock = 36 MHz.
+
+- Prescaler = 72 - 1.
+
+- Counter Period = 0xffff - 1.
+
+------
+
 ### Circuit
 
 ![image](https://github.com/qaz9517532846/STM_StepMotor/blob/main/circuit/Circuit.png)
